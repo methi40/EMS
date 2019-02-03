@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import AppHome from '@/components/AppHome'
 import AppLogin from '@/components/AppLogin'
+import AppExplore from '@/components/AppExplore'
 import AppEvent from '@/components/AppEvent'
+import AppPlanAEvent from '@/components/AppPlanAEvent'
 
 
 Vue.use(Router)
@@ -20,9 +22,19 @@ export default new Router({
       component: AppLogin
     },
     {
+      path: '/explore',
+      name: 'AppExplore',
+      component: AppExplore
+    },
+    {
       path: '/event',
       name: 'AppEvent',
       component: AppEvent
+    },
+    {
+      path: '/planaevent',
+      name: 'AppPlanAEvent',
+      component: AppPlanAEvent
     }
   ]
 })

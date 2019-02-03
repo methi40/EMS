@@ -25,7 +25,7 @@
                accusantium, corporis velit quia, optio perspiciatis deserunt.
                </div>
           </div>
-          <router-link to="/event">
+          <router-link to="/explore">
        <v-btn round="3" color="green" right="5">EXPLORE</v-btn>
       </router-link>
         </v-card-title>

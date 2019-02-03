@@ -7,8 +7,10 @@
       <router-link to="/">
       <v-btn flat>HOME</v-btn>
       </router-link>
-      <v-btn flat>EVENTS</v-btn>
-      <v-btn flat>PLAN A EVENT</v-btn>
+      <router-link to="/event">
+      <v-btn flat>EVENTS</v-btn></router-link>
+      <router-link to="/planaevent">
+      <v-btn flat>PLAN A EVENT</v-btn></router-link>
       <router-link to="/login">
       <v-btn flat>REGISTER</v-btn>
       </router-link>
