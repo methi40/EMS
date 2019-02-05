@@ -20,8 +20,7 @@
               <div style="color:green;text-align:left;margin-top:20px;">
               <h3 class="display-2">Events</h3></div>
     <v-card maxWidth:200 color="grey">
-              <v-card-text >
-              
+              <v-card-text>
               </v-card-text>
     </v-card>      
 

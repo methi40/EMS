@@ -8,6 +8,7 @@
       :src="item.src"
     ></v-carousel-item>
   </v-carousel >
+  <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7">
   <v-container mb-5>
   <v-layout align-start justify-space-around row fill-height>
     <v-flex xs12 ma-4 >
@@ -129,14 +130,9 @@
   </v-layout>
   
   </v-container>
-</div>
-
-
-    
+ </v-img> 
+</div> 
 </template>
-
-
-
 <script>
   export default {
     data () {

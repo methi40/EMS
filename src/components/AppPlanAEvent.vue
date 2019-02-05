@@ -1,5 +1,5 @@
 <template>
-<v-container>
+<v-container mb-3>
   <form>
     <v-text-field
       v-model="EventName"
@@ -17,7 +17,6 @@
     ></v-textarea>
     <v-text-field
       v-model="date"
-      
       label="Date:dd/mm/yy"
       required
      

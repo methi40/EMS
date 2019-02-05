@@ -10,22 +10,18 @@
           </v-btn>
           <v-toolbar-title>Login</v-toolbar-title>
           <v-spacer></v-spacer>
-          <!-- <v-toolbar-items>
-            <v-btn dark flat @click="dialog = false">Save</v-btn>
-            
-          </v-toolbar-items> -->
         </v-toolbar>
         <form>
             <v-container>
     <v-text-field
-      v-model="email"
+      v-model="loginemail"
       
       label="E-mail"
       required
       
     ></v-text-field>
     <v-text-field
-      v-model="password"
+      v-model="loginpassword"
       
       label="Password"
       type="password"
@@ -38,6 +34,10 @@
       </v-card>
     </v-dialog>
   </v-layout>
+
+
+
+
   <form>
     <v-text-field
       v-model="name"
@@ -106,7 +106,14 @@
     data () {
       return {
         dialog: false,
-      }
+      loginname: '',
+      loginemail: '',
+      name: '',
+      email: '',
+      organisation: '',
+      password: '',
+      confirmpassword: '',
     }
+  }
   }
 </script>
