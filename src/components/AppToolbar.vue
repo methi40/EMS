@@ -16,5 +16,17 @@
       </router-link>
       
     </div>
+    
+    
   </v-toolbar>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      items: [
+        'All', 'Family', 'Friends', 'Coworkers'
+      ]
+    })
+  }
+</script>
