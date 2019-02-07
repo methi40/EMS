@@ -1,6 +1,6 @@
 <template>
 
-<div> 
+<div class="bkgimg"> 
   <v-carousel height="400">
     <v-carousel-item
       v-for="(item,i) in items"
@@ -8,143 +8,92 @@
       :src="item.src"
     ></v-carousel-item>
   </v-carousel >
-  <v-img src="https://picsum.photos/200/300?blur" aspect-ratio="1.7">
   <v-container mb-5>
   <v-layout align-start justify-space-around row fill-height>
     <v-flex xs12 ma-4 >
       <v-card color="" height="400" max-width="450" raised >
-        <div class="img">
+        <v-card-title primary-title>
+          <div >
+            <img class="img" src="./silogo.png">
         </div>
-        <div style="margin-top:20%;">
+        <div style="margin-top:12%;">
          <h3 class="headline">Software Incubator</h3>
-            <div style="margin-top:3%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <div style="margin-top:2%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                Nemo, adipisci quo? Temporibus molestias provident rem
                neque rerum libero suscipit quisquam ullam minus, quae 
                accusantium, corporis velit quia, optio perspiciatis deserunt.
                </div>
           </div>
+        </v-card-title>
           <router-link to="/explore">
-       <v-btn style="" round="3" color="green" centre>EXPLORE</v-btn>
+       <v-btn dark style="" round="3" color="green" centre>EXPLORE</v-btn>
       </router-link>
       </v-card>
     </v-flex>
     <v-flex xs12 ma-4 >
-      <v-card color="" max-height="300" max-width="450" raised >
-        <v-img 
-          src="silogo.png"
-          aspect-ratio="2.75"
-        ></v-img>
+      <v-card color="" height="400" max-width="450" raised >
         <v-card-title primary-title>
-          <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          <div >
+            <img class="img" src="./csi.png">
+        </div>
+        <div style="margin-top:12%;">
+         <h3 class="headline">Computer Socity Of India</h3>
+            <div style="margin-top:2%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                Nemo, adipisci quo? Temporibus molestias provident rem
                neque rerum libero suscipit quisquam ullam minus, quae 
                accusantium, corporis velit quia, optio perspiciatis deserunt.
                </div>
           </div>
         </v-card-title>
+          <router-link to="/explore">
+       <v-btn dark style="" round="3" color="green" centre>EXPLORE</v-btn>
+      </router-link>
       </v-card>
-    </v-flex>
-    <v-flex xs12 ma-4>
-      <v-card color="" max-height="300" max-width="450" raised >
-        <v-img 
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-          aspect-ratio="2.75"
-        ></v-img>
+    </v-flex>  
+      <v-flex xs12 ma-4 >
+      <v-card color="" height="400" max-width="450" raised >
         <v-card-title primary-title>
-          <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          <div >
+            <img class="img" src="./csi.png">
+        </div>
+        <div style="margin-top:12%;">
+         <h3 class="headline">Computer Socity Of India</h3>
+            <div style="margin-top:2%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                Nemo, adipisci quo? Temporibus molestias provident rem
                neque rerum libero suscipit quisquam ullam minus, quae 
                accusantium, corporis velit quia, optio perspiciatis deserunt.
                </div>
           </div>
         </v-card-title>
-      </v-card>
-    </v-flex>
-    
-  </v-layout>
-  <v-layout align-start justify-space-around row fill-height>
-    <v-flex xs12 ma-4 >
-      <v-card color="" max-height="300" max-width="450" raised >
-        
-        <v-img 
-          src=""
-          aspect-ratio="2.75"
-        ></v-img>
-        
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               Nemo, adipisci quo? Temporibus molestias provident rem
-               neque rerum libero suscipit quisquam ullam minus, quae 
-               accusantium, corporis velit quia, optio perspiciatis deserunt.
-               
-               </div>
-          </div>
-        </v-card-title>
-      </v-card>
-    </v-flex>
-    <v-flex xs12 ma-4 >
-      <v-card color="" max-height="300" max-width="450" raised >
-        <v-img 
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-          aspect-ratio="2.75"
-        ></v-img>
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               Nemo, adipisci quo? Temporibus molestias provident rem
-               neque rerum libero suscipit quisquam ullam minus, quae 
-               accusantium, corporis velit quia, optio perspiciatis deserunt.
-               </div>
-          </div>
-        </v-card-title>
-      </v-card>
-    </v-flex>
-    <v-flex xs12 ma-4>
-      <v-card color="" max-height="300" max-width="450" raised >
-        <v-img 
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-          aspect-ratio="2.75"
-        ></v-img>
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               Nemo, adipisci quo? Temporibus molestias provident rem
-               neque rerum libero suscipit quisquam ullam minus, quae 
-               accusantium, corporis velit quia, optio perspiciatis deserunt.
-               </div>
-          </div>
-        </v-card-title>
+          <router-link to="/explore">
+       <v-btn dark style="" round="3" color="green" centre>EXPLORE</v-btn>
+      </router-link>
       </v-card>
     </v-flex>
     
   </v-layout>
-  
-  </v-container>
- </v-img> 
+</v-container>
+
 </div> 
 </template>
 <style>
 .img{
   background-color: transparent;
-  background-image: url("silogo.png");
 	background-repeat:no-repeat; 
 	background-size:cover;
   height: 100px;
 	width: 100px;
-  margin-left: auto;
+  margin-left:100%;
 	margin-right: auto;
-  padding:20%; 
+  display: block;
 }
 .headline{
   margin-top: 2%;
+}
+.bkgimg{
+  background-image:url("./bkg2.png");
+  background-repeat:no-repeat; 
+	background-size:cover; 
 }
 </style>
 

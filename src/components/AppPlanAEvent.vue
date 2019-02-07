@@ -1,9 +1,10 @@
 <template>
+<div class="PlanAEventBkgImg">
 <v-container mb-3>
   <form>
     <v-text-field
       v-model="EventName"
-      
+      color="green"
       label="Event Name"
       required
       
@@ -44,6 +45,7 @@
     <v-btn color="green" type="submit">SUBMIT</v-btn>
   </form>
 </v-container>
+</div>
 </template>
 
 
@@ -58,3 +60,11 @@
     }
   }
 </script>
+
+<style>
+.PlanAEventBkgImg{
+  background-image: url("./PlanAEventBkgImg.png");
+  background-repeat:no-repeat; 
+	background-size:cover;
+}
+</style>
