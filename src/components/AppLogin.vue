@@ -1,43 +1,5 @@
 <template>
-<v-container>
-    <v-layout row justify-end>
-    <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-      <v-btn slot="activator" color="primary" dark>Login</v-btn>
-      <v-card>
-        <v-toolbar dark color="primary">
-          <v-btn @click="dialog = false">
-            <v-icon>close</v-icon>
-          </v-btn>
-          <v-toolbar-title>Login</v-toolbar-title>
-          <v-spacer></v-spacer>
-        </v-toolbar>
-        <form>
-            <v-container>
-    <v-text-field
-      v-model="loginemail"
-      
-      label="E-mail"
-      required
-      
-    ></v-text-field>
-    <v-text-field
-      v-model="loginpassword"
-      
-      label="Password"
-      type="password"
-      required
-      
-    ></v-text-field>
-    <v-btn color="green" type="submit">Login</v-btn>
-            </v-container>
-        </form>
-      </v-card>
-    </v-dialog>
-  </v-layout>
-
-
-
-
+<v-container mb-4>
   <form>
     <v-text-field
       v-model="name"
@@ -87,19 +49,47 @@
     ></v-text-field>
 
     <v-btn color="green" type="submit">SUBMIT</v-btn>
+    <div><h2>Already Have A Account??</h2></div>
   </form>
-</v-container>
-</template>
+  <v-layout row justify-center>
+    <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+      <v-btn  slot="activator" color="primary" dark>Login</v-btn>
+      <v-card>
+        <v-toolbar dark color="primary">
 
-// 
-//   export default {
-//     data () {
-//       return {
-//         row: null
-//       }
-//     }
-//   }
-// 
+          <v-btn @click="dialog = false">
+            <v-icon>close</v-icon>
+          </v-btn>
+          
+          <v-toolbar-title>Login</v-toolbar-title>
+          <v-spacer></v-spacer>
+        </v-toolbar>
+        <form>
+            <v-container>
+    <v-text-field
+      v-model="loginemail"
+      
+      label="E-mail"
+      required
+      
+    ></v-text-field>
+    <v-text-field
+      v-model="loginpassword"
+      
+      label="Password"
+      type="password"
+      required
+      
+    ></v-text-field>
+    <v-btn color="green" type="submit">Login</v-btn>
+            </v-container>
+        </form>
+      </v-card>
+    </v-dialog>
+  </v-layout>
+</v-container>
+
+</template>
 
 <script>
   export default {

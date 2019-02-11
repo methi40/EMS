@@ -2,17 +2,24 @@
   <div id="app">
     <app-toolbar></app-toolbar>
     <router-view/>
+    <mobile-menu :menu="menu" class="hidden-sm-and-up"/>
+      <painpoint id="earthworks"/>
     <app-footer></app-footer>
     
   </div>
 </template>
 
 <script>
-import AppFooter from './components/AppFooter'
 import AppToolbar from './components/AppToolbar'
+import MobileMenu from './components/MobileMenu'
+import AppFooter from './components/AppFooter'
 export default {
   name: 'App',
-  components:{AppToolbar,AppFooter}
+  components:{
+    AppToolbar,
+    AppFooter,
+    MobileMenu,
+  }
 }
 </script>
 

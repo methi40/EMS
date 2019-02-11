@@ -7,6 +7,7 @@
       color="green"
       label="Event Name"
       required
+      dark
       
     ></v-text-field>
     <v-textarea
@@ -15,19 +16,23 @@
       label="Event Description"
       auto-grow
       value=""
+      color="green"
+      dark
     ></v-textarea>
     <v-text-field
       v-model="date"
       label="Date:dd/mm/yy"
       required
-     
+      color="green"
+     dark
     ></v-text-field>
     <v-text-field
       v-model="time"
       
       label="Time"
       required
-     
+     color="green"
+     dark
     ></v-text-field>
 
      <v-text-field
@@ -35,12 +40,13 @@
       
       label="Venue"
       required
-     
+     color="green"
+     dark
     ></v-text-field>
     <v-radio-group  v-model="row" row>
-      <v-radio color="green" label="Technical" value="radio-1"></v-radio>
-      <v-radio color="green" label="Cultural" value="radio-2"></v-radio>
-      <v-radio color="green" label="Managerial" value="radio-3"></v-radio>
+      <v-radio dark color="green" label="Technical" value="radio-1"></v-radio>
+      <v-radio dark color="green" label="Cultural" value="radio-2"></v-radio>
+      <v-radio dark color="green" label="Managerial" value="radio-3"></v-radio>
     </v-radio-group>
     <v-btn color="green" type="submit">SUBMIT</v-btn>
   </form>
