@@ -49,7 +49,6 @@
     </v-layout>
     <v-divider/>
   </v-container>
-  
   <v-container>
   <v-layout align-start justify-space-around row fill-height>
     <v-flex xs12 ma-4 >
